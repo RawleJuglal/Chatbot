@@ -1,0 +1,62 @@
+.--app-app-container{
+    font-family: 'Playfair Display', serif;
+    text-align:center;
+    text-shadow: 0 0 2px #a882dd;
+    background-color:#49416d;
+    color:whitesmoke;
+    max-width:320px;
+    min-height:100vh;
+    margin:0 auto;
+    padding:6.25em 0;
+}
+
+.--app-title{
+    font-size:2rem;
+    margin-bottom:.5em;
+}
+
+.--app-bat-form{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    max-width: 90%;
+    margin:0 auto;
+}
+
+.--app-bat-label,
+.--bat-response{
+    padding:.75em;
+    letter-spacing: .1em;
+    line-height: 1.4em;
+}
+
+.--app-bat-select{
+    font-size:1.25rem;
+    padding:.25em 0;
+    margin-bottom:1em;
+}
+
+.--app-bat-select:focus-visible,
+.--app-bat-select:target{
+    outline: 2px solid #e08d79;
+}
+
+.btn{
+    background-color:transparent;
+    color:whitesmoke;
+    font-family:'Playfair Display', serif;
+    font-size:1.25rem;
+    font-weight:bold;
+    border:2px solid whitesmoke;
+    padding:.5em;
+    transition: background-color 1s ease;
+}
+
+.btn:hover{
+    background-color:#a882dd;
+    transition: background-color 1s ease;
+}
+
+.--batform-submit{
+    margin-bottom:1.2em;
+}
