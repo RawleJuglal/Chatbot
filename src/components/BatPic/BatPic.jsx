@@ -18,8 +18,8 @@ function BatPic(){
     return(
         
         <div id="batpic-component">
-            {!isLoading && <p>tada 🎉</p>}
-            {!isLoading && <img src={batUrl}/>}
+            {!isLoading && <p className='--batpic-text'>tada 🎉</p>}
+            {!isLoading && <img className='--batpic-img' src={batUrl}/>}
         </div>
     )
 }

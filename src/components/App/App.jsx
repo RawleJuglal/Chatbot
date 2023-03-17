@@ -33,7 +33,7 @@ function App() {
         </select>
         <input id="submit-btn" className='--batform-submit btn' type="submit" value="Submit" />
       </form>
-      <p id="bat-response" class='--bat-response'>{viewable == 'pic'? 'Right on, bat pic coming up! 🦇': viewable == 'question'? 'Fire away! 🦇': viewable == 'animate'? '':'... 🦇' }</p>
+      <p id="bat-response" className='--bat-response'>{viewable == 'pic'? 'Right on, bat pic coming up! 🦇': viewable == 'question'? 'Fire away! 🦇': viewable == 'animate'? '':'... 🦇' }</p>
       {viewable == 'animate' && <BatAnimate />}
       {viewable == 'pic' && <BatPic />}
       {viewable == 'question' && <BatQuestions />}
