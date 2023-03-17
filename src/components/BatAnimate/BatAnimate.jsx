@@ -3,8 +3,8 @@ import './BatAnimate.css'
 
 function BatAnimate(){
     return(
-        <div>
-            <h1 className='--batAnimate-title'>Bat Animate</h1>
+        <div id="batAnimate-component">
+            <p className='fly'>🦇 🦇 🦇 🦇 🦇 🦇 🦇 🦇</p>
         </div>
     )
 }
