@@ -1,3 +1,5 @@
-.--batpic-title{
-    color:purple;
+.--batpic-img{
+    width:95%;
+    object-fit: cover;
+    margin:.5em;
 }

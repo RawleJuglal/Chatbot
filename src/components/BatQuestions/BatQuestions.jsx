@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import './batQuestions.css'
+import './BatQuestions.css'
 import { nanoid } from 'nanoid'
+import 'animate.css';
 
 function BatQuestions(){
     const [answer, setAnswer] = useState('')
@@ -12,17 +13,25 @@ function BatQuestions(){
     ]
 
     let batQuestions = batQandA.map((pair, index, array) => {
-        return <button key={nanoid()} id={index} onClick={(event)=>answerQuestion(event)}>{pair[0]}</button>
+        return <button key={nanoid()} id={index} className="--batQuestions-btn btn" onClick={(event)=>answerQuestion(event)}>{pair[0]}</button>
     })
 
-    function answerQuestion(e){
-        setAnswer(batQandA[e.target.id][1]) 
+    function answerQuestion(e){       
+        if(document.getElementById('bat-qa')){
+            document.getElementById('bat-qa').classList.remove('animate__animated', 'animate__backInRight')
+            setTimeout(()=>{
+                setAnswer(batQandA[e.target.id][1])
+                document.getElementById('bat-qa').classList.add('animate__animated', 'animate__backInRight')
+            },200)
+        } else {
+            setAnswer(batQandA[e.target.id][1])
+        }
     }
     
     return(
         <div id="batQuestion-component">
             {batQuestions}
-            {answer && <p id="bat-qa">{answer}</p>}
+            {answer && <p id="bat-qa" className='--bat-qa animate__animated animate__backInRight'>{answer}</p>}
         </div>
     )
 }
