@@ -8,7 +8,7 @@ function BatPic(){
         if(isLoading){
             setTimeout(()=>{
                 const randInt = Math.floor(Math.random() * 6);
-                setBatUrl(`./src/images/bat${randInt}.JPG`)
+                setBatUrl(`./images/bat${randInt}.JPG`)
                 setIsLoading(false)
             },2000)
         }
